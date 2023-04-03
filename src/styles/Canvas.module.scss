@@ -1,0 +1,15 @@
+@import 'globalVars.scss';
+
+.container{
+  margin: 0 auto;
+  flex-grow: 1;
+  min-width: 100%;
+  margin-top: $toolHeight + $settingsHeight + 20px;
+  min-height: calc(100vh - $toolHeight - $settingsHeight - 20px);
+}
+
+.canvas{
+  border: 1px solid rgb(163, 158, 158);
+  margin: 5px;
+  background-color: white;
+}

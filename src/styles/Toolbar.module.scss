@@ -1,0 +1,82 @@
+@import 'globalVars';
+
+*{
+  user-select: none;
+}
+
+.toolbar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $toolHeight;
+  background-color: rgb(232, 228, 228);
+  border: 1px solid rgb(113, 110, 110);
+  z-index: 999;
+  box-shadow: 0 0 2px 1px rgb(80, 79, 79);
+}
+
+.toolbar__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  width: $toolHeight;
+  height: $toolHeight - 2px;
+  background-color: inherit;
+}
+
+.toolbar__img{
+  width: 90%;
+  height: 90%;
+  max-width: $toolHeight - 7px;
+  max-height: $toolHeight - 7px;
+  object-fit: contain;
+}
+
+.toolbar__btn:hover {
+  border: solid 1px rgb(199, 196, 196);
+}
+
+.toolbar__btn_chosen{
+  border: 1px solid rgb(232, 228, 228);
+  padding: 3px;
+  box-shadow: inset 0 0 0 3px rgb(175, 172, 172);
+}
+
+.toolbar__btn_chosen:hover{
+  border: 1px solid rgb(232, 228, 228);
+}
+
+
+.container__do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 15px;
+  height: 100%;
+}
+
+.toolbar__btn_do{
+  margin-left: 7px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding: 1px 7px;
+  font-weight: 900;
+}
+
+.toolbar__btn_do:hover{
+  background-color: black;
+  color: white;
+}
+
+.toolbar__btn_do:active{
+  border-color: black;
+  background-color: white;
+  color: black;
+}
